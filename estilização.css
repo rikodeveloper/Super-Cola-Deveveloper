@@ -1,0 +1,76 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+header{
+    background-image: url('bg\ \(1\).jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o cabeçalho */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 300px; /* Defina a altura do cabeçalho conforme necessário */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+header h1 {
+    color: #ffffff; /* Cor do texto */
+    padding-top: 100px; /* Espaçamento superior para centralizar verticalmente o texto */
+}
+
+
+
+.navbar{
+background-color: rgb(6, 0, 82);
+justify-content: space-between;
+min-height: 70px;
+display: flex;
+align-items: center;
+
+}
+
+li{
+list-style: none;
+}
+
+a{
+color:#fff;
+text-decoration: none;
+}
+
+.logo{
+font-size: 2rem;
+font-weight: bold;
+}
+.nav-menu{
+display: flex;
+align-items: center;
+gap: 60px;
+}
+
+.nav-link{
+transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: rgb(19, 239, 19);
+}
+.hamburger{
+display: none;
+cursor: pointer;
+}
+
+.bar{
+display:block;
+width: 28px;
+height: 3px;
+border-radius: 2px;
+margin: 5px auto;
+background-color: #fff;
+transition: 0.3s;
+}
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+
+
+}
+}
